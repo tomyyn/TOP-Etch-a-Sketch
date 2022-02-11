@@ -1,0 +1,39 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:stretch;
+    margin:0px;
+}
+
+
+.header,
+.footer{
+    background-color: rgb(11, 11, 80);
+}
+
+.header{
+    height: 80px;
+    font-size:xx-large;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-grow:1;
+    flex-direction: column;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    padding: 30px;
+}
+
