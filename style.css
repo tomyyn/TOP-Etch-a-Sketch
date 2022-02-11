@@ -28,6 +28,20 @@ body{
     flex-direction: column;
 }
 
+.gridCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#grid{
+    width: 640px;
+    height: 640px;
+    border: 10px solid black;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+}
 
 .footer{
     display: flex;
