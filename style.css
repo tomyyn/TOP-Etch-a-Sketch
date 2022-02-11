@@ -43,6 +43,20 @@ body{
     flex-wrap: wrap;
 }
 
+.options,
+.modes{
+    display: flex;
+    gap:8px;
+    margin:5px;
+    justify-content: center;
+}
+
+.options button,
+.modes button{
+    width: 80px;
+    height: 30px;
+}
+
 .footer{
     display: flex;
     justify-content: center;
