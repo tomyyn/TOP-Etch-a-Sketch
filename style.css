@@ -39,9 +39,11 @@ body{
     width: 640px;
     height: 640px;
     border: 10px solid black;
+    background-color: black;
     display: flex;
     flex: 0 0 auto;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .options,

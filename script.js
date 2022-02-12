@@ -2,14 +2,15 @@ const GRIDSIZE=640;
 let gridOn = true;
 let color = "black";
 
+
 function colorSquare(e){
     e.target.style.backgroundColor=color;
 }
 
 function createSquare(tam){
     const sqr=document.createElement("div");
-    sqr.style.cssText=`width: ${tam}px; height: ${tam}px; margin:0px; box-sizing: border-box; border: 1px solid black`;
-    sqr.addEventListener("mouseenter",colorSquare)
+    sqr.style.cssText=`width: ${tam}px; height: ${tam}px; margin:0px; box-sizing: border-box; border: 1px solid black; background:white`;
+    sqr.addEventListener("mouseenter",colorSquare);
     return sqr;
 }
 
