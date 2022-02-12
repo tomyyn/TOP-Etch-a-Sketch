@@ -4,7 +4,15 @@ let color = "black";
 
 
 function colorSquare(e){
-    e.target.style.backgroundColor=color;
+    if(color=="shader"){
+
+    }
+    else if(color=="chaos"){
+        e.target.style.backgroundColor=`rgb(${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)},${Math.floor(Math.random()*255)})`;
+    }
+    else{
+        e.target.style.backgroundColor=color;
+    }
 }
 
 function createSquare(tam){
