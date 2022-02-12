@@ -2,9 +2,19 @@ const GRIDSIZE=640;
 let gridOn = true;
 let color = "black";
 
+function darken(value){
+    return value>26?value-26:0;
+}
 
 function colorSquare(e){
     if(color=="shader"){
+        let c=e.target.style.backgroundColor;
+        if(c=="white") c="rgb(229,229,229)";
+        else if(c!="black"){
+            c=c.slice(4,-1).split(", ")
+            c=`rgb(${darken(c[0])},${darken(c[1])},${darken(c[2])})`
+        }
+        e.target.style.backgroundColor=c;
 
     }
     else if(color=="chaos"){
