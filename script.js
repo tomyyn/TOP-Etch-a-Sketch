@@ -76,6 +76,7 @@ function toggleGrid(e){
 
 //Selects a new mode, on click callback for mode buttons
 function selectMode(e){
+    if (color==e.target.id) return;
     e.target.classList.add("big")
     const prev=document.querySelector(`#${color}`)
     prev.classList.toggle("big")
