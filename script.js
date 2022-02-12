@@ -49,10 +49,22 @@ function toggleGrid(e){
     }
 }
 
+function selectMode(e){
+    e.target.classList.add("big")
+    const prev=document.querySelector(`#${color}`)
+    prev.classList.toggle("big")
+    color=e.target.id;
+}
+
 const resizeB=document.querySelector("#resize");
 resizeB.addEventListener("click",resize);
 
 const gridB=document.querySelector("#gridB");
 gridB.addEventListener("click",toggleGrid);
+
+const modes=document.querySelectorAll(".modes button")
+modes.forEach(mode=>{
+    mode.addEventListener("click",selectMode);
+})
 
 createGrid(16);

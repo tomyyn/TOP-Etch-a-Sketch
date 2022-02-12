@@ -61,6 +61,11 @@ body{
     height: 30px;
 }
 
+.modes .big{
+    transform: scale(1.1);
+    border: 1px solid yellow;
+}
+
 .footer{
     display: flex;
     justify-content: center;
